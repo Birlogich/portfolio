@@ -1,10 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Poppins:wght@400;600;700;800&display=swap');
+
+:root {
+
+  /* Typography */
+  --family-dm-sans: 'DM Sans', sans-serif;
+  --family-poppins: 'Poppins', sans-serif;
+  --fs-general: 18px;
+  --fs-title: 58px;
+  --fs-title-bg: 70px;
+  --fs-section-title: 48px;
+  --fs-section-subtitle: 32px;
+  --fs-card-title: 28px;
+  --fs-card-text-ltl: 16px;
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 800;
+}
+
+body[data-theme='light'] {
+  --ordinary-color:#666666;
+  --section-title: #42446E;
+  --section-subtitle: #666666;
+  --card-title-text: #000000;
+  --link: #000000;
+  --bg-color: #FFFFFF;
+  --bg-card-color: #FFFFFF;
+}
+body[data-theme='dark'] {
+  --ordinary-color:#666666;
+  --section-title: #CCCCCC;
+  --section-subtitle: #A7A7A7;
+  --card-title-text: #CCCCCC;
+  --link: #FFFFFF;
+  --bg-color: #000000;
+  --bg-card-color: #363535;
+}
+
+#root {
+  height: 100vh;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  color: var(--ordinary-text);
+  font-family: var(--family-dm-sans);
+  font-size: var( --fs-general);
+  font-weight: var(--fw-normal);
+  background-color: var(--bg-color);
 }
 
 code {
