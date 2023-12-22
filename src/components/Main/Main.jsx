@@ -1,3 +1,4 @@
+import { Comments } from "../Comments/Comments";
 import { Hero } from "./Hero";
 import { Projects } from "./Projects";
 import { TechStack } from "./TechStack";
@@ -8,6 +9,7 @@ export const Main = () => {
       <Hero />
       <TechStack />
       <Projects />
+      <Comments />
     </main>
   );
 };

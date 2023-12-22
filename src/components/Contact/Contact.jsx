@@ -8,7 +8,7 @@ const gradientStyle = {
 
 export const Contact = () => {
   return (
-    <div className="flex h-full w-full justify-center items-center flex-col px-[30px]">
+    <div className="flex h-full w-full justify-center items-start flex-col px-[30px]">
       <p className="text-title-bg text-section-title-color font-bold sm:text-[25px]">
         For any questions please mail me:
       </p>

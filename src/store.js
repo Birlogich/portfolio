@@ -12,9 +12,11 @@ import {
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "@reduxjs/toolkit";
 import { themeReducer } from "./features/theme/theme-slice";
+import { addCommentReducer } from "./features/comments/comments-slice";
 
 const appReducer = combineReducers({
   theme: themeReducer,
+  comment: addCommentReducer,
 });
 
 export const rootReducer = (state, action) => {

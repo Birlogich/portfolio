@@ -150,7 +150,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="flex flex-col text-center mb-[200px] items-center sm:mb-[50px]">
+    <div className="flex flex-col text-center mb-[100px] items-center sm:mb-[50px]">
       <h2 className="text-section-title-color text-section-title font-bold mb-[25px] sm:text-[35px]">
         Projects
       </h2>

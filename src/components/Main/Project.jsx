@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../../features/theme/use-theme";
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 const copyIcon = (
   <svg
@@ -53,61 +55,82 @@ const gitImage = (
 export const Project = ({ project }) => {
   const [theme] = useTheme();
   const dropShadowStyle = { boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" };
+  const [fulldesc, setFullDesc] = useState("");
 
   return (
-    <div
-      style={dropShadowStyle}
-      className="flex flex-col rounded-[15px] max-w-[356px] w-full mx-[22px] mb-[60px] bg-[#FDFDFD] bg-bg-card-color min-w-[275px]"
-    >
-      <div className="w-full mb-[25px] h-[260px]">
-        <img
-          src={project.img}
-          alt={project.title}
-          className="object-cover h-full w-full"
-        />
-      </div>
-      <div className="p-[20px] flex flex-col flex-auto">
-        <div className="flex flex-col flex-auto">
-          <p className="text-card-title-color text-card-title mb-[17px] font-bold">
-            {project.title}
-          </p>
-          <p className="text-general text-section-subtitle-color mb-[12px] flex-auto">
-            {project.describe.length > 100
-              ? project.describe.slice(0, 100) + "..."
-              : project.describe}
-          </p>
-          <p className="text-general text-section-subtitle-color mb-[24px]">
-            <span className="text-card-title-color">Tech stack: </span>
-            {project.stack}
-          </p>
+    <>
+      <div
+        style={dropShadowStyle}
+        className="flex flex-col rounded-[15px] max-w-[356px] w-full mx-[22px] mb-[60px] bg-[#FDFDFD] bg-bg-card-color min-w-[275px]"
+      >
+        <div className="w-full mb-[25px] h-[260px]">
+          <img
+            src={project.img}
+            alt={project.title}
+            className="object-cover h-full w-full"
+          />
         </div>
-        <div className="flex w-full justify-between sm:flex-col">
-          <Link
-            to={project.link}
-            target="_blank"
-            className="flex underline-offset-4"
-            style={{
-              textDecoration: "underline",
-              textDecorationColor: theme === "dark" ? "white" : "black",
-            }}
-          >
-            {copyIcon}
-            <span className="ml-[10px] text-link-color">Live Preview</span>
-          </Link>
-          <Link
-            to={project.github}
-            target="_blank"
-            className="flex underline-offset-4"
-            style={{
-              textDecoration: "underline",
-              textDecorationColor: theme === "dark" ? "white" : "black",
-            }}
-          >
-            {gitImage}
-            <span className="ml-[10px] text-link-color">View code</span>
-          </Link>
+        <div className="p-[20px] flex flex-col flex-auto">
+          <div className="flex flex-col flex-auto">
+            <p className="text-card-title-color text-card-title mb-[17px] font-bold">
+              {project.title}
+            </p>
+            <button
+              className="text-general text-section-subtitle-color mb-[12px] flex-auto"
+              onClick={() => setFullDesc(true)}
+            >
+              {project.describe.length > 100
+                ? project.describe.slice(0, 100) + "..."
+                : project.describe}
+            </button>
+            <p className="text-general text-section-subtitle-color mb-[24px]">
+              <span className="text-card-title-color">Tech stack: </span>
+              {project.stack}
+            </p>
+          </div>
+          <div className="flex w-full justify-between sm:flex-col">
+            <Link
+              to={project.link}
+              target="_blank"
+              className="flex underline-offset-4"
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: theme === "dark" ? "white" : "black",
+              }}
+            >
+              {copyIcon}
+              <span className="ml-[10px] text-link-color">Live Preview</span>
+            </Link>
+            <Link
+              to={project.github}
+              target="_blank"
+              className="flex underline-offset-4"
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: theme === "dark" ? "white" : "black",
+              }}
+            >
+              {gitImage}
+              <span className="ml-[10px] text-link-color">View code</span>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      {fulldesc && (
+        <div className="w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10">
+          <div
+            className={`${
+              theme === "dark" ? "bg-white" : "bg-black"
+            } flex flex-col w-full max-w-[356px] justify-between text-ordinary items-center p-[30px] rounded-lg relative`}
+          >
+            <IoMdClose
+              className="absolute top-0 right-0 w-[35px]"
+              onClick={() => setFullDesc(false)}
+            />
+            <p>{project.describe}</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
