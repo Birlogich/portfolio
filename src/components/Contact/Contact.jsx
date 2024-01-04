@@ -10,7 +10,7 @@ export const Contact = () => {
   return (
     <div className="flex h-full w-full justify-center items-start flex-col px-[30px]">
       <p className="text-title-bg text-section-title-color font-bold sm:text-[25px]">
-        For any questions please mail me:
+        For any questions:
       </p>
       <p
         className="text-title-bg text-section-title-color font-bold sm:text-[20px]"
