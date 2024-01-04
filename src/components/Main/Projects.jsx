@@ -31,7 +31,7 @@ const projects = [
     describe:
       "The application dedicated country flags and can check neighbors of every country. My PET Project to hone my skills in Redux-React. Information about application's state I saved in the store using Redux RTK.  ",
     stack: "Styled.Components, React.JS, RTK, HTML",
-    link: "https://countriesflagsapp-birlogich.vercel.app/",
+    link: "https://countries-flags-app-one.vercel.app/",
     github: "https://github.com/Birlogich/countries-flags",
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     search query necessary information and check user type and subscription type, using Redux RTK and React-Router-Dom and useEffect Hook.`,
     stack:
       "HTML, TailWind CSS, Animated TailWind CSS, React.JS, STRIPE.JS, JS cookie, React-Hook-Form, -React-Router-Dom, Redux Persist, Redux RTK",
-    link: "https://mistfile.com/",
+    link: "https://github.com/Birlogich/mistfile",
     github: "https://github.com/Birlogich/mistfile",
   },
   {

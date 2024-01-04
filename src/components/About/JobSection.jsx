@@ -89,12 +89,12 @@ export const JobSection = ({ job }) => {
             <span className="ml-[5px] sm:text-[15px]">{job.location}</span>
           </span>
         </div>
-        <p className="flex items-center">
+        <div className="flex items-center">
           <div className="w-[16px] h-[12px] sm:hidden">{dateImg}</div>
           <span className="ml-[5px] text-section-subtitle-color sm:text-[12px]">
             {job.time}
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );

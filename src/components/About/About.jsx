@@ -39,12 +39,12 @@ export const About = () => {
         About Me
       </h2>
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
-        Ivan is a Frontend Engineer at the Reecard LLC and has been dedicated to
-        creating frontend side of web applications. Ivan worked as a Frontend
-        Engineer in Russia for half a year, where he developed HTML e-mails and
-        product cards using company's CMS and as a Sales Manager for 5 years. He
-        holds Master's Degree in LAW and Vocational Degree in Software
-        Engineering.
+        I'm frontend developer with three years of experience working with HTML,
+        CSS/SCSS, ES6+, React, React-Redux, RESTful API and strong design
+        skills. Throughout these three years I worked on commercial projects
+        such as a cloud storage web application and web messenger. Have a strong
+        combination of technical ability and creativity, eager to tackle complex
+        problems and continue to find ways to maximize user efficiency.
       </p>
       <h2 className="text-section-title-color text-section-title font-bold mb-[40px] sm:mb-[20px]">
         Work Experience

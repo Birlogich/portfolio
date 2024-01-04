@@ -5,8 +5,9 @@ export const Hero = () => {
     <div className="flex w-full justify-between items-center mb-[350px] sm:mb-[50px] sm:flex-col">
       <p className="text-title-bg text-section-title-color font-bold sm:text-[35px] sm:mb-[30px]">
         Hi, <br />
-        My name is <br />
-        IVAN ZHIGALEV <br />I build things for web
+        I'm front end developer
+        <br />
+        Who writes clean, elegant and efficient code
       </p>
       <img
         style={{

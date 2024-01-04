@@ -22,7 +22,7 @@ export const Comments = () => {
         Comments
       </h2>
       <p className="mb-[50px] text-ordinary text-section-subtitle sm:mb-[25px] sm:text-[25px]">
-        You may leave you comment below:
+        You may leave your comments below:
       </p>
       <form
         onSubmit={(e) => addMessage(e)}
@@ -31,13 +31,13 @@ export const Comments = () => {
       >
         <input
           type="text"
-          placeholder="your name"
+          placeholder="name"
           name="name"
           className="border-text-link-color border-[1px] border-solid p-[10px] rounded-lg mb-[20px] text-general text-section-subtitle-color"
         ></input>
         <input
           type="text"
-          placeholder="your comment"
+          placeholder="comment"
           name="mes"
           className="border-text-link-color border-[1px] border-solid p-[10px] rounded-lg mb-[20px] text-general text-section-subtitle-color"
         ></input>
