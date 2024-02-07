@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTheme } from "../../features/theme/use-theme";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
@@ -63,6 +63,8 @@ export const Header = () => {
 
   const chooseColor = theme === "dark" ? "bg-white" : "bg-[antiquewhite]";
   const closeMenu = () => setShowMenu(false);
+  const activeClass = ({ isActive }) =>
+    !isActive ? styles.link : `${styles.link} ${styles.link_active}`;
 
   useEffect(() => {
     if (theme === "dark") {
@@ -74,11 +76,21 @@ export const Header = () => {
     <header className={styles.header}>
       {width > 767 && (
         <nav className={styles.navigation}>
-          <Link to="/">Home</Link>
-          <Link to="about">About</Link>
-          <Link to="stack">Tech Stack</Link>
-          <Link to="projects">Projects</Link>
-          <Link to="contact">Contact</Link>
+          <NavLink to="/" className={activeClass}>
+            Home
+          </NavLink>
+          <NavLink to="about" className={activeClass}>
+            About
+          </NavLink>
+          <NavLink to="stack" className={activeClass}>
+            Tech Stack
+          </NavLink>
+          <NavLink to="projects" className={activeClass}>
+            Projects
+          </NavLink>
+          <NavLink to="contact" className={activeClass}>
+            Contact
+          </NavLink>
         </nav>
       )}
       {width <= 767 && (
@@ -89,26 +101,26 @@ export const Header = () => {
             onClick={() => setShowMenu(true)}
           />
           {showMenu && (
-            <div className={styles.signWrapper}>
+            <nav className={styles.signWrapper}>
               <div className={chooseColor}>
                 <IoMdClose onClick={closeMenu} />
-                <Link to="/" onClick={closeMenu}>
+                <NavLink to="/" onClick={closeMenu}>
                   Home
-                </Link>
-                <Link to="about" onClick={closeMenu}>
+                </NavLink>
+                <NavLink to="about" onClick={closeMenu}>
                   About
-                </Link>
-                <Link to="stack" onClick={closeMenu}>
+                </NavLink>
+                <NavLink to="stack" onClick={closeMenu}>
                   Tech Stack
-                </Link>
-                <Link to="projects" onClick={closeMenu}>
+                </NavLink>
+                <NavLink to="projects" onClick={closeMenu}>
                   Projects
-                </Link>
-                <Link to="contact" onClick={closeMenu}>
+                </NavLink>
+                <NavLink to="contact" onClick={closeMenu}>
                   Contact
-                </Link>
+                </NavLink>
               </div>
-            </div>
+            </nav>
           )}
         </>
       )}

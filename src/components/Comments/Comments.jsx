@@ -18,12 +18,8 @@ export const Comments = () => {
 
   return (
     <div className="flex flex-col mb-[100px] sm:mb-[50px]">
-      <h2 className="text-section-title-color text-section-title font-bold mb-[25px] sm:text-[35px]">
-        Comments
-      </h2>
-      <p className="mb-[50px] text-ordinary text-section-subtitle sm:mb-[25px] sm:text-[25px]">
-        You may leave your comments below:
-      </p>
+      <h2>Comments</h2>
+      <h3>You may leave your comments below:</h3>
       <form
         onSubmit={(e) => addMessage(e)}
         className="flex flex-col mb-[25px]"

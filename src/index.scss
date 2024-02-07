@@ -20,6 +20,18 @@
   --fw-normal: 400;
   --fw-semi-bold: 700;
   --fw-bold: 800;
+
+  h2 {
+    @apply text-section-title-color font-bold;
+    font-size: clamp(35px, 3.3vw, 48px);
+    margin-bottom: clamp(25px, 1.5vw, 40px);
+ }
+
+ h3 {
+    @apply text-ordinary text-section-subtitle;
+    font-size: clamp(25px, 2.2vw, 32px);
+    margin-bottom: clamp(25px, 5vw, 50px);
+ }
 }
 
 body[data-theme='light'] {

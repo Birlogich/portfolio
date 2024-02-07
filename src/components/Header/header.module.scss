@@ -5,14 +5,16 @@
 .navigation {
    @apply flex text-ordinary;
    column-gap: clamp(10px, 10vw, 100px);
+}
 
-   a {
-      font-size: clamp(18px, 1.6vw, 25px);
-      text-wrap: nowrap;
-      position: relative;
+.link {
+   font-size: clamp(18px, 1.6vw, 25px);
+   text-wrap: nowrap;
+   position: relative;
+   :hover {
+      @apply text-section-title-color;
    }
-
-   a::after {
+   &::after {
       content: '';
       display: inline-block;
       width: 0;
@@ -23,10 +25,15 @@
       background: #54b3d6 no-repeat;
       transition: all .3s;
    }
-
-:hover::after  {
+   &:hover::after  {
       width: 100%;
    }
+}
+
+.link.link_active {
+   background: -webkit-linear-gradient(#eee, #333);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .signWrapper {

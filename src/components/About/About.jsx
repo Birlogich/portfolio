@@ -35,9 +35,7 @@ const jobs = [
 export const About = () => {
   return (
     <div className="flex flex-col w-full flex-auto">
-      <h2 className="text-section-title-color text-section-title font-bold mb-[40px] sm:mb-[20px]">
-        About Me
-      </h2>
+      <h2>About Me</h2>
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
         I'm frontend developer with three years of experience working with HTML,
         CSS/SCSS, ES6+, React, React-Redux, RESTful API and strong design

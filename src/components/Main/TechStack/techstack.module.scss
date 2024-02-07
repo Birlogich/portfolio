@@ -1,8 +1,5 @@
 .stack {
    @apply flex flex-col text-center mb-[200px] sm:mb-[50px] w-full;
-   h2 {
-      @apply text-section-title-color text-section-title font-bold mb-[50px] sm:mb-[25px] sm:text-[35px];
-   }
 }
 
 .wrapper {

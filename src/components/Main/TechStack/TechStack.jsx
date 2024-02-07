@@ -241,9 +241,7 @@ export const TechStack = () => {
   return (
     <div className={styles.stack}>
       <h2>My Tech Stack</h2>
-      <p className="mb-[140px] text-ordinary text-section-subtitle sm:mb-[50px] sm:text-[25px]">
-        Technologies I’ve been working with recently
-      </p>
+      <h3>Technologies I’ve been working with recently</h3>
       <div className={styles.wrapper}>
         {iconsArr.map((icon, index) => {
           return <div key={index}>{icon}</div>;

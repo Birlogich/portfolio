@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../../features/theme/use-theme";
+import { useTheme } from "../../../features/theme/use-theme";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
