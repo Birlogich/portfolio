@@ -1,3 +1,4 @@
 .wrapper {
-   @apply flex flex-col text-center mb-[100px] items-center sm:mb-[50px];
+   @apply flex flex-col text-center items-center;
+   margin-bottom: clamp(50px, 14vw, 100px);
 }

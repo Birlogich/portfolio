@@ -1,9 +1,12 @@
 .header {
-   @apply flex w-full mt-[5vw] justify-center mb-[10vw] items-center justify-between
+   @apply flex w-full justify-between items-center;
+   margin-top: 5vw;
+   margin-bottom: 10vw;
 }
 
 .navigation {
-   @apply flex text-ordinary;
+   display:  flex; 
+   @apply text-ordinary;
    column-gap: clamp(10px, 10vw, 100px);
 }
 
@@ -32,18 +35,27 @@
 
 .link.link_active {
    background: -webkit-linear-gradient(#eee, #333);
+   background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
 .signWrapper {
-   @apply w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10 px-[20px];
+   @apply w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 z-10;
+   padding-inline: 20px;
+   backdrop-filter: blur(6px);
 
    div {
-      @apply flex flex-col w-full max-w-[609px] justify-between text-ordinary items-center w-1/2 h-1/2 py-[60px] rounded-lg relative;
-
+      @apply flex flex-col justify-between text-ordinary items-center rounded-lg relative;
+      width: 100%;
+      max-width: 609px;
+      height: 50%;
+      padding-inline: 60px;
       svg {
-         @apply absolute top-[10px] right-[10px] w-[35px];
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         width: 35px;
       }
    }
 }

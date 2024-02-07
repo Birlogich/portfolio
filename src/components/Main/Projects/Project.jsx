@@ -120,7 +120,7 @@ export const Project = ({ project }) => {
         <div className="w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10">
           <div
             className={`${
-              theme === "dark" ? "bg-white" : "bg-black"
+              theme === "dark" ? "bg-white" : "bg-[antiquewhite]"
             } flex flex-col w-full max-w-[356px] justify-between text-ordinary items-center p-[30px] rounded-lg relative`}
           >
             <IoMdClose
