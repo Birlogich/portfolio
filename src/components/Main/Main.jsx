@@ -1,7 +1,7 @@
 import { Comments } from "../Comments/Comments";
-import { Hero } from "./Hero";
+import { Hero } from "./Hero/Hero";
 import { Projects } from "./Projects";
-import { TechStack } from "./TechStack";
+import { TechStack } from "./TechStack/TechStack";
 
 export const Main = () => {
   return (

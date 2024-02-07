@@ -1,0 +1,42 @@
+.header {
+   @apply flex w-full mt-[5vw] justify-center mb-[10vw] items-center justify-between
+}
+
+.navigation {
+   @apply flex text-ordinary;
+   column-gap: clamp(10px, 10vw, 100px);
+
+   a {
+      font-size: clamp(18px, 1.6vw, 25px);
+      text-wrap: nowrap;
+      position: relative;
+   }
+
+   a::after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #54b3d6 no-repeat;
+      transition: all .3s;
+   }
+
+:hover::after  {
+      width: 100%;
+   }
+}
+
+.signWrapper {
+   @apply w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10 px-[20px];
+
+   div {
+      @apply flex flex-col w-full max-w-[609px] justify-between text-ordinary items-center w-1/2 h-1/2 py-[60px] rounded-lg relative;
+
+      svg {
+         @apply absolute top-[10px] right-[10px] w-[35px];
+      }
+   }
+}

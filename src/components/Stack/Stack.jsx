@@ -1,4 +1,4 @@
-import { TechStack } from "../Main/TechStack";
+import { TechStack } from "../Main/TechStack/TechStack";
 
 export const Stack = () => {
   return (

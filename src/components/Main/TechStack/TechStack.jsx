@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./techstack.module.scss";
 
 const html5 = (
   <svg
@@ -238,23 +239,14 @@ const iconsArr = [
 
 export const TechStack = () => {
   return (
-    <div className="flex flex-col text-center mb-[200px] sm:mb-[50px]">
-      <h2 className="text-section-title-color text-section-title font-bold mb-[50px] sm:mb-[25px] sm:text-[35px]">
-        My Tech Stack
-      </h2>
+    <div className={styles.stack}>
+      <h2>My Tech Stack</h2>
       <p className="mb-[140px] text-ordinary text-section-subtitle sm:mb-[50px] sm:text-[25px]">
         Technologies I’ve been working with recently
       </p>
-      <div className="flex w-full flex-wrap items-center justify-center">
+      <div className={styles.wrapper}>
         {iconsArr.map((icon, index) => {
-          return (
-            <div
-              key={index}
-              className="w-full max-w-[200px] mb-[50px] justify-center flex items-center justify-center sm:max-w-[150px]"
-            >
-              {icon}
-            </div>
-          );
+          return <div key={index}>{icon}</div>;
         })}
       </div>
     </div>

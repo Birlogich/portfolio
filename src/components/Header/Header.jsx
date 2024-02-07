@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useGetWindowWidth } from "../customHooks/useGetWindowWidth";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import styles from "./header.module.scss";
 
 export const Header = () => {
   const [width] = useGetWindowWidth();
@@ -59,8 +60,9 @@ export const Header = () => {
       borderRadius: 20 / 2,
     },
   }));
-  const signWrapper =
-    "w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10 px-[20px]";
+
+  const chooseColor = theme === "dark" ? "bg-white" : "bg-[antiquewhite]";
+  const closeMenu = () => setShowMenu(false);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -69,15 +71,15 @@ export const Header = () => {
   }, [theme]);
 
   return (
-    <header className="flex w-full mt-[45px] justify-center mb-[220px] items-center justify-between sm:mb-[50px]">
+    <header className={styles.header}>
       {width > 767 && (
-        <div className="flex w-full max-w-[609px] justify-between text-ordinary">
+        <nav className={styles.navigation}>
           <Link to="/">Home</Link>
           <Link to="about">About</Link>
           <Link to="stack">Tech Stack</Link>
           <Link to="projects">Projects</Link>
           <Link to="contact">Contact</Link>
-        </div>
+        </nav>
       )}
       {width <= 767 && (
         <>
@@ -87,29 +89,22 @@ export const Header = () => {
             onClick={() => setShowMenu(true)}
           />
           {showMenu && (
-            <div className={signWrapper}>
-              <div
-                className={`${
-                  theme === "dark" ? "bg-white" : "bg-black"
-                } flex flex-col w-full max-w-[609px] justify-between text-ordinary items-center w-1/2 h-1/2 py-[60px] rounded-lg relative`}
-              >
-                <IoMdClose
-                  className="absolute top-[10px] right-[10px] w-[35px]"
-                  onClick={() => setShowMenu(false)}
-                />
-                <Link to="/" onClick={() => setShowMenu(false)}>
+            <div className={styles.signWrapper}>
+              <div className={chooseColor}>
+                <IoMdClose onClick={closeMenu} />
+                <Link to="/" onClick={closeMenu}>
                   Home
                 </Link>
-                <Link to="about" onClick={() => setShowMenu(false)}>
+                <Link to="about" onClick={closeMenu}>
                   About
                 </Link>
-                <Link to="stack" onClick={() => setShowMenu(false)}>
+                <Link to="stack" onClick={closeMenu}>
                   Tech Stack
                 </Link>
-                <Link to="projects" onClick={() => setShowMenu(false)}>
+                <Link to="projects" onClick={closeMenu}>
                   Projects
                 </Link>
-                <Link to="contact" onClick={() => setShowMenu(false)}>
+                <Link to="contact" onClick={closeMenu}>
                   Contact
                 </Link>
               </div>

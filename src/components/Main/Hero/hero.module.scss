@@ -1,0 +1,20 @@
+.wrapper {
+   @apply flex items-center sm:flex-col;
+   gap: 0 50px;
+   margin-bottom: clamp(50px, 15vw, 200px);
+
+   p {
+      @apply text-title-bg text-section-title-color font-bold sm:text-[35px] sm:mb-[30px];
+      font-size: clamp(35px, 4.1vw, 60px);
+   }
+   img {
+      @apply h-auto rounded-full overflow-hidden object-cover;
+      max-width: clamp(250px, 20vw, 350px);
+      background: linear-gradient(#ccc 0 0) padding-box, linear-gradient(to right, #9c20aa, #fb3570) border-box;
+      color: #313149;
+      padding: 10px;
+      border: 5px solid transparent;
+      border-radius: 100%;
+      aspect-ratio: 1;
+   }
+}  
