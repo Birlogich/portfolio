@@ -1,5 +1,6 @@
 import React from "react";
 import { JobSection } from "./JobSection";
+import { Link } from "react-router-dom";
 
 const jobs = [
   {
@@ -43,11 +44,19 @@ export const About = () => {
   return (
     <div className="flex flex-col w-full flex-auto">
       <h2>About Me</h2>
+      {/*     <Link
+        to="/files/IvanZhigalevResume.docx"
+        target="_blank"
+        download
+        className="max-w-[285px] mb-[40px] text-[20px] text-link-color sm:mb-[20px] underline-offset-1 border-b-[1px] border-solid border-black"
+      >
+        My Resume(click to download)
+      </Link> */}
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
-        I'm frontend developer with three years of experience working with HTML,
+        I'm frontend developer with two years of experience working with HTML,
         CSS/SCSS, ES6+, React, React-Redux, RESTful API and strong design
-        skills. Throughout these three years I worked on commercial projects
-        such as a cloud storage web application and web messenger. Have a strong
+        skills. Throughout these two years I worked on commercial projects such
+        as a cloud storage web application and web messenger. Have a strong
         combination of technical ability and creativity, eager to tackle complex
         problems and continue to find ways to maximize user efficiency.
       </p>
