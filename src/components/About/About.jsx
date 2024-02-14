@@ -17,18 +17,25 @@ const jobs = [
     time: "May 2022 - Nov 2022",
   },
   {
-    title: "Frontend Developer",
-    type: "Freelance",
-    company: "Freelance",
-    location: "United States",
-    time: "Nov 2022 - Present",
-  },
-  {
     title: "Sales Manager",
     type: "Full-time",
     company: "LIDER TRANS GLOBAL FORWARDING",
     location: "Russia",
-    time: "May 2017 - May 2022",
+    time: "Nov 2021 - May 2022",
+  },
+  {
+    title: "Detective",
+    type: "Full-time",
+    company: "Police of Russia",
+    location: "Russia",
+    time: "Jun 2016 - Sep 2021",
+  },
+  {
+    title: "Detective",
+    type: "Full-time",
+    company: "Federal Drug Control Service of Russia",
+    location: "Russia",
+    time: "Mar 2012 - Jun 2016",
   },
 ];
 
