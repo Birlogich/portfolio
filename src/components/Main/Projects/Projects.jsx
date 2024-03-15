@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import personal from "../../../assets/img/personal.png";
 import flags from "../../../assets/img/flags.png";
 import kanban from "../../../assets/img/kanban.png";
@@ -6,9 +7,10 @@ import reecard from "../../../assets/img/reecard.png";
 import scan from "../../../assets/img/scan.png";
 import irvas from "../../../assets/img/window-store.png";
 import pictures from "../../../assets/img/pictures.art.png";
+import { useInView } from "react-intersection-observer";
 import { Project } from "./Project";
 import { useGetWindowWidth } from "../../customHooks/useGetWindowWidth";
-import { useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useSlider } from "../../customHooks/useSlider";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
@@ -101,13 +103,31 @@ const projects = [
   },
 ];
 
-export const Projects = () => {
+export const Projects = memo(() => {
+  const ref = useRef();
+  const { ref: inViewRef, inView } = useInView({
+    /* Optional options */
+    threshold: 0.2,
+  });
+
+  const setRefs = useCallback(
+    (node) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef]
+  );
+
   const [width] = useGetWindowWidth();
   const [theme] = useTheme();
   const switchColor = theme === "dark" ? "white" : "black";
   const mappedProjects = projects.map((project, index) => {
-    return <Project project={project} key={index} />;
+    return <Project project={project} key={index} inView={inView} />;
   });
+
+  console.log(mappedProjects);
 
   const [
     goToPrevSlide,
@@ -125,7 +145,7 @@ export const Projects = () => {
   const slicedMappedProjects = items
     ?.slice(slide, slide + 1)
     .map((project, index) => {
-      return <Project project={project} key={index} />;
+      return <Project project={project} key={index} inView={inView} />;
     });
 
   return (
@@ -133,6 +153,7 @@ export const Projects = () => {
       <h2>Projects</h2>
       <h3>Things I’ve built so far</h3>
       <div
+        ref={setRefs}
         className="flex w-full flex-wrap justify-center"
         style={{ margin: "0 -20px" }}
       >
@@ -184,4 +205,4 @@ export const Projects = () => {
       </div>
     </div>
   );
-};
+});

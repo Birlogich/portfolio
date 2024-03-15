@@ -52,16 +52,23 @@ const gitImage = (
   </svg>
 );
 
-export const Project = ({ project }) => {
+export const Project = ({ project, inView }) => {
   const [theme] = useTheme();
   const dropShadowStyle = { boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" };
   const [fulldesc, setFullDesc] = useState("");
+
+  const animationStyle =
+    "flex flex-col rounded-[15px] max-w-[356px] w-full mx-[22px] mb-[60px] bg-[#FDFDFD] bg-bg-card-color min-w-[275px]";
 
   return (
     <>
       <div
         style={dropShadowStyle}
-        className="flex flex-col rounded-[15px] max-w-[356px] w-full mx-[22px] mb-[60px] bg-[#FDFDFD] bg-bg-card-color min-w-[275px]"
+        className={
+          !inView
+            ? `${animationStyle} duration-300 ease-in translate-x-7 opacity-0`
+            : `${animationStyle} duration-300 opacity-1 translate-x-0`
+        }
       >
         <div className="w-full mb-[25px] h-[260px]">
           <img
