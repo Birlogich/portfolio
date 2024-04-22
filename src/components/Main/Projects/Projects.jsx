@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import personal from "../../../assets/img/personal.png";
 import flags from "../../../assets/img/flags.png";
+import shortly from "../../../assets/img/shortly.png";
 import kanban from "../../../assets/img/kanban.png";
 import mistfile from "../../../assets/img/mistfile.png";
 import reecard from "../../../assets/img/reecard.png";
@@ -18,6 +19,15 @@ import { useTheme } from "../../../features/theme/use-theme";
 import styles from "./projects.module.scss";
 
 const projects = [
+  {
+    img: shortly,
+    title: "URL Shortener",
+    describe: `This project is a URL shortener web application. The app allows users to shorten long URLs into more manageable, easy-to-share links.`,
+    stack:
+      "HTML5, CSS3, SCSS, Framer-Motion Library For CSS, JavaScript (ES6+), React.JS, React-Copy-To-Clipboard, React-Redux, React-Router-Dom, Redux-Persist, React-Icons, React-Hook-Form",
+    link: "https://urlshortener-kohl.vercel.app/",
+    github: "https://github.com/Birlogich/urlshortener",
+  },
   {
     img: personal,
     title: "Personal Website",
