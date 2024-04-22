@@ -6,6 +6,7 @@ import kanban from "../../../assets/img/kanban.png";
 import mistfile from "../../../assets/img/mistfile.png";
 import reecard from "../../../assets/img/reecard.png";
 import scan from "../../../assets/img/scan.png";
+import ipTracker from "../../../assets/img/ipTracker.png";
 import irvas from "../../../assets/img/window-store.png";
 import pictures from "../../../assets/img/pictures.art.png";
 import { useInView } from "react-intersection-observer";
@@ -19,6 +20,15 @@ import { useTheme } from "../../../features/theme/use-theme";
 import styles from "./projects.module.scss";
 
 const projects = [
+  {
+    img: ipTracker,
+    title: "IP Tracker",
+    describe: `This project is an IP tracker web application developed as a solution to the IP Address Tracker Challenge from Frontend Mentor. The app allows users to track and visualize IP addresses on an interactive map, providing details about the location, ISP, and other relevant information.`,
+    stack:
+      "HTML5, CSS3, SCSS, Framer-Motion Library For CSS, JavaScript (ES6+), React.JS, React-Copy-To-Clipboard, React-Redux, React-Router-Dom, Redux-Persist, React-Icons, React-Hook-Form, React-Leaflet, React-Text-Mask",
+    link: "https://ip-tracker-ten-alpha.vercel.app/",
+    github: "https://github.com/Birlogich/ipTracker",
+  },
   {
     img: shortly,
     title: "URL Shortener",
