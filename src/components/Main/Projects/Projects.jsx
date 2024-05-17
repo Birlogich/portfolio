@@ -88,7 +88,7 @@ const projects = [
   {
     img: irvas,
     title: "Window Store IRVAS",
-    describe: `This website I made as a freelancer. I had HTML and CSS website with no JS. 
+    describe: `The pet project. I had HTML and CSS website with no JS. 
     I added modal(popup) windows, created forms to send information to backend, 
     implemented input form-calculator to count the amount of work, manipulated DOM tree using JS.
     Tech Stack: HTML, CSS, SCSS, GULP, JavaScript.`,
@@ -100,7 +100,7 @@ const projects = [
   {
     img: pictures,
     title: "Pictures.art",
-    describe: `This website I made as a freelancer. I had HTML and CSS website with no JS. 
+    describe: `The pet project. I had HTML and CSS website with no JS. 
     All JavaScript code was written with OOP standard. I created logics to catch the scroll in the end of the window to show modal popup window. 
     Implemented slider on a Vanilla JS. Developed forms for sending data for backend and mask for phone number input. Implemented filter for elements. 
     Tech Stack: HTML, CSS, SCSS, GULP, JavaScript`,
