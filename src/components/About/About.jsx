@@ -11,11 +11,18 @@ const jobs = [
     time: "Aug 2023 - Dec 2023",
   },
   {
+    title: "Relocation",
+    type: "Career Break",
+    company: "Relocation to the USA",
+    location: "Russia - USA",
+    time: "Sep 2022 - Aug 2023",
+  },
+  {
     title: "Detective",
     type: "Full-time",
     company: "Police",
     location: "Russia",
-    time: "Jun 2016 - Sep 2021",
+    time: "Jun 2016 - Sep 2022",
   },
   {
     title: "Detective",
