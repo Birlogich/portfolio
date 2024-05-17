@@ -55,7 +55,7 @@ export const About = () => {
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
         I'm frontend developer with experience working with HTML, CSS/SCSS,
         ES6+, React, React-Redux, RESTful API and strong design skills.
-        Throughout these time I worked on commercial projects such as a cloud
+        Throughout this time I worked on commercial projects such as a cloud
         storage web application and web messenger. Have a strong combination of
         technical ability and creativity, eager to tackle complex problems and
         continue to find ways to maximize user efficiency.
