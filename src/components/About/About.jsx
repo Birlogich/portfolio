@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 
 const jobs = [
   {
+    title: "Self Employed",
+    type: "Full-time",
+    company: "Lenape Pizza",
+    location: "Pocopson Township, PA, United States",
+    time: "May 2023 - Present",
+  },
+  {
     title: "Frontend Engineer",
     type: "Contract",
     company: "REECARD LLC",
