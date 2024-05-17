@@ -7,7 +7,7 @@ const jobs = [
     title: "Self Employed",
     type: "Full-time",
     company: "Lenape Pizza",
-    location: "Pocopson Township, PA, United States",
+    location: "PA, United States",
     time: "May 2023 - Present",
   },
   {
@@ -53,12 +53,12 @@ export const About = () => {
         My Resume(click to download)
       </Link> */}
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
-        I'm frontend developer with two years of experience working with HTML,
-        CSS/SCSS, ES6+, React, React-Redux, RESTful API and strong design
-        skills. Throughout these two years I worked on commercial projects such
-        as a cloud storage web application and web messenger. Have a strong
-        combination of technical ability and creativity, eager to tackle complex
-        problems and continue to find ways to maximize user efficiency.
+        I'm frontend developer with experience working with HTML, CSS/SCSS,
+        ES6+, React, React-Redux, RESTful API and strong design skills.
+        Throughout these time I worked on commercial projects such as a cloud
+        storage web application and web messenger. Have a strong combination of
+        technical ability and creativity, eager to tackle complex problems and
+        continue to find ways to maximize user efficiency.
       </p>
       <h2 className="text-section-title-color text-section-title font-bold mb-[40px] sm:mb-[20px]">
         Work Experience
