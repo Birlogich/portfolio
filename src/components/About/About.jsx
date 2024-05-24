@@ -11,7 +11,7 @@ const jobs = [
     time: "May 2023 - Present",
   },
   {
-    title: "Frontend Engineer",
+    title: "Frontend Web Developer",
     type: "Contract",
     company: "REECARD LLC",
     location: "CA, United States",
@@ -25,33 +25,35 @@ const jobs = [
     time: "Sep 2022 - Aug 2023",
   },
   {
-    title: "Detective",
+    title: "Frontend Web Developer",
     type: "Full-time",
-    company: "Police",
+    company: "SЕОТLТ",
     location: "Russia",
-    time: "Jun 2016 - Sep 2022",
+    time: "Sep 2020 - Sep 2022",
   },
   {
     title: "Detective",
     type: "Full-time",
-    company: "DEA",
+    company: "Police",
     location: "Russia",
-    time: "Mar 2012 - Jun 2016",
+    time: "Mar 2012 - Sep 2020",
   },
 ];
 
 export const About = () => {
   return (
     <div className="flex flex-col w-full flex-auto">
+      {
+        <Link
+          to="/files/FrontendResume.pdf"
+          target="_blank"
+          download
+          className="max-w-[285px] mb-[40px] text-[20px] text-link-color sm:mb-[20px] underline-offset-1 border-b-[1px] border-solid border-black"
+        >
+          My Resume(click to download)
+        </Link>
+      }
       <h2>About Me</h2>
-      {/*     <Link
-        to="/files/IvanZhigalevResume.docx"
-        target="_blank"
-        download
-        className="max-w-[285px] mb-[40px] text-[20px] text-link-color sm:mb-[20px] underline-offset-1 border-b-[1px] border-solid border-black"
-      >
-        My Resume(click to download)
-      </Link> */}
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
         I'm frontend developer with experience working with HTML, CSS/SCSS,
         ES6+, React, React-Redux, RESTful API and strong design skills.
