@@ -68,19 +68,19 @@ const projects = [
   },
   {
     img: mistfile,
-    title: "Mistfile",
+    title: "Clomd",
     describe: `This is a cloud computing application. I implemented registration, login, communication with backend,
     rendering components getting JSON data from the API. In this application we used non-password verification, so I created logics which catch from the 
     search query necessary information and check user type and subscription type, using Redux RTK and React-Router-Dom and useEffect Hook.`,
     stack:
       "HTML, TailWind CSS, Animated TailWind CSS, React.JS, STRIPE.JS, JS cookie, React-Hook-Form, -React-Router-Dom, Redux Persist, Redux RTK",
-    link: "https://github.com/Birlogich/mistfile",
+    link: "https://clomd.com/",
     github: "https://github.com/Birlogich/mistfile",
   },
   {
     img: reecard,
     title: "Reecard",
-    describe: "It's the main website of Reecard Company",
+    describe: "It's the main website of Reecard Company. Only desktop ver.",
     stack: "HTML, Tailwind CSS, React.JS, React-Router-Dom",
     link: "https://reecard.com/",
     github: "https://github.com/Birlogich",
