@@ -21,6 +21,15 @@ import styles from "./projects.module.scss";
 
 const projects = [
   {
+    img: kanban,
+    title: "STRUKD",
+    describe:
+      "Web application dedicaded a platform which leverages machine learning, natural language processing, and computer vision to efficiently navigate the web and extract relevant data.",
+    stack: "HTML, NEXT.JS, Tailwind CSS, React.JS",
+    link: "https://strukd.com/",
+    github: "https://strukd.com/",
+  },
+  {
     img: mistfile,
     title: "Clomd",
     describe: `This is a cloud computing application. I implemented registration, login, communication with backend,
@@ -67,15 +76,6 @@ const projects = [
     stack: "Styled.Components, React.JS, RTK, HTML",
     link: "https://countries-flags-app-one.vercel.app/",
     github: "https://github.com/Birlogich/countries-flags",
-  },
-  {
-    img: kanban,
-    title: "STRUKD",
-    describe:
-      "Web application dedicaded a platform which leverages machine learning, natural language processing, and computer vision to efficiently navigate the web and extract relevant data.",
-    stack: "HTML, NEXT.JS, Tailwind CSS, React.JS",
-    link: "https://strukd.com/",
-    github: "https://strukd.com/",
   },
 ];
 
