@@ -70,12 +70,12 @@ const projects = [
   },
   {
     img: kanban,
-    title: "Kanban App",
+    title: "STRUKD",
     describe:
-      "This is Kanban Application. Pet project for hone skills React.JS. I didn't use there React-Redux. The application save all the information about state in the local.storage. ",
-    stack: "HTML, Tailwind CSS, React.JS",
-    link: "https://kanban-app-birlogich.vercel.app/",
-    github: "https://github.com/Birlogich/kanban-app",
+      "Web application dedicaded a platform which leverages machine learning, natural language processing, and computer vision to efficiently navigate the web and extract relevant data.",
+    stack: "HTML, NEXT.JS, Tailwind CSS, React.JS",
+    link: "https://strukd.com/",
+    github: "https://strukd.com/",
   },
   {
     img: irvas,
