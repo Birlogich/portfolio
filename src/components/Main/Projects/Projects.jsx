@@ -21,6 +21,17 @@ import styles from "./projects.module.scss";
 
 const projects = [
   {
+    img: mistfile,
+    title: "Clomd",
+    describe: `This is a cloud computing application. I implemented registration, login, communication with backend,
+    rendering components getting JSON data from the API. In this application we used non-password verification, so I created logics which catch from the 
+    search query necessary information and check user type and subscription type, using Redux RTK and React-Router-Dom and useEffect Hook.`,
+    stack:
+      "HTML, TailWind CSS, Animated TailWind CSS, React.JS, STRIPE.JS, JS cookie, React-Hook-Form, -React-Router-Dom, Redux Persist, Redux RTK",
+    link: "https://clomd.com/",
+    github: "https://github.com/Birlogich/mistfile",
+  },
+  {
     img: ipTracker,
     title: "IP Tracker",
     describe: `This project is an IP tracker web application developed as a solution to the IP Address Tracker Challenge from Frontend Mentor. The app allows users to track and visualize IP addresses on an interactive map, providing details about the location, ISP, and other relevant information.`,
@@ -67,25 +78,6 @@ const projects = [
     github: "https://github.com/Birlogich/kanban-app",
   },
   {
-    img: mistfile,
-    title: "Clomd",
-    describe: `This is a cloud computing application. I implemented registration, login, communication with backend,
-    rendering components getting JSON data from the API. In this application we used non-password verification, so I created logics which catch from the 
-    search query necessary information and check user type and subscription type, using Redux RTK and React-Router-Dom and useEffect Hook.`,
-    stack:
-      "HTML, TailWind CSS, Animated TailWind CSS, React.JS, STRIPE.JS, JS cookie, React-Hook-Form, -React-Router-Dom, Redux Persist, Redux RTK",
-    link: "https://clomd.com/",
-    github: "https://github.com/Birlogich/mistfile",
-  },
-  {
-    img: reecard,
-    title: "Reecard",
-    describe: "It's the main website of Reecard Company. Only desktop ver.",
-    stack: "HTML, Tailwind CSS, React.JS, React-Router-Dom",
-    link: "https://reecard.com/",
-    github: "https://github.com/Birlogich",
-  },
-  {
     img: irvas,
     title: "Window Store IRVAS",
     describe: `The pet project. I had HTML and CSS website with no JS. 
@@ -108,18 +100,6 @@ const projects = [
       "Html, SCSS, React.JS, React-Router-Dom, Redux-React, Material UI, REST API, Axios, GIT",
     link: "https://pictures-art-coral.vercel.app/",
     github: "https://github.com/Birlogich/pictures.art",
-  },
-  {
-    img: scan,
-    title: "SCAN",
-    describe: `It is an application for business which can help people find information about company in Russia. 
-    I used many React Libraries like Redux-React, React-Router-DOM and Material UI. 
-    In this application I implemented logics for authorization using Axios library for requests to API. 
-    For the best speed of app I used React-Router-Dom features like Layout and Outlet to avoid unnecessary re-renders of components.`,
-    stack:
-      "Html, SCSS, React.JS, React-Router-Dom, Redux-React, Material UI, REST API, Axios, GIT",
-    link: "https://searchinnapp-birlogich.vercel.app/",
-    github: "https://github.com/Birlogich/searchinnapp",
   },
 ];
 
