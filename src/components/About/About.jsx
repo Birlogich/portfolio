@@ -1,17 +1,30 @@
 import React from "react";
 import { JobSection } from "./JobSection";
-import { Link } from "react-router-dom";
 
 const jobs = [
   {
-    title: "Frontend Web Developer",
-    type: "Freelance",
-    company: "UpWork",
-    location: "Remote, United States",
+    title: "Field Investigator",
+    type: "Full-time",
+    company: "D.O. Richardson and Associates",
+    location: "PA, United States",
+    time: "Aug 2024 - Present",
+  },
+  {
+    title: "Front Desk Receptionist/Driver",
+    type: "Part-time",
+    company: "Lenape Pizza",
+    location: "PA, United States",
     time: "May 2023 - Present",
   },
   {
-    title: "Frontend Web Developer",
+    title: "Frontend Developer",
+    type: "Freelance",
+    company: "UpWork",
+    location: "Remote, United States",
+    time: "Jan 2024 - Aug 2024",
+  },
+  {
+    title: "Frontend Developer",
     type: "Contract",
     company: "REECARD LLC",
     location: "CA, United States",
@@ -19,11 +32,19 @@ const jobs = [
   },
 
   {
-    title: "Frontend Web Developer",
+    title: "Frontend Developer",
     type: "Full-time",
     company: "SЕОТLТ",
     location: "",
     time: "Sep 2020 - Sep 2022",
+  },
+
+  {
+    title: "Detective",
+    type: "Full-time",
+    company: "Ministry of Internal Affairs of Russia",
+    location: "",
+    time: "Mar 2020 - Sep 2020",
   },
 ];
 
