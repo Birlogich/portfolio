@@ -10,13 +10,6 @@ const jobs = [
     time: "Aug 2024 - Present",
   },
   {
-    title: "Front Desk Receptionist/Driver",
-    type: "Part-time",
-    company: "Lenape Pizza",
-    location: "PA, United States",
-    time: "May 2023 - Present",
-  },
-  {
     title: "Frontend Developer",
     type: "Freelance",
     company: "UpWork",
@@ -42,7 +35,7 @@ const jobs = [
   {
     title: "Detective",
     type: "Full-time",
-    company: "Ministry of Internal Affairs of Russia",
+    company: "Police",
     location: "",
     time: "Mar 2020 - Sep 2020",
   },
