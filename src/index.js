@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store, persistor } from "./store";
 import { PersistGate } from "redux-persist/integration/react";
+import 'animate.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

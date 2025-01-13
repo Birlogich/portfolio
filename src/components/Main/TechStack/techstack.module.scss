@@ -7,5 +7,6 @@
 }
 
 .wrapper > div {
-   @apply justify-center flex items-center 
-} 
+   @apply justify-center flex items-center;
+   animation-delay: calc(1s * var(--i)) !important;
+}

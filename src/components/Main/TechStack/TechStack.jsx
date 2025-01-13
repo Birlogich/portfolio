@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./techstack.module.scss";
 
+
 const html5 = (
   <svg
     width="120"
@@ -244,7 +245,7 @@ export const TechStack = () => {
       <h3>Technologies I’ve been working with recently</h3>
       <div className={styles.wrapper}>
         {iconsArr.map((icon, index) => {
-          return <div key={index}>{icon}</div>;
+          return <div key={index} className={`item animate__animated animate__fadeInDown`} style={{ "--i": index * 0.1 }}>{icon}</div>;
         })}
       </div>
     </div>

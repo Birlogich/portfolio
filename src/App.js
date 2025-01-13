@@ -6,6 +6,7 @@ import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { Stack } from "./components/Stack/Stack";
 import { ProjectsPage } from "./components/ProjectsPage/ProjectsPage";
+import 'animate.css';
 
 function App() {
   return (
