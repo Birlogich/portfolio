@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "./techstack.module.scss";
+import { useInView } from 'react-intersection-observer';
 
 
 const html5 = (
@@ -239,14 +239,23 @@ const iconsArr = [
 ];
 
 export const TechStack = () => {
+
+  const { ref, inView } = useInView({
+    triggerOnce: false, 
+    threshold: 0.1,     
+  });
+
+
   return (
     <div className={styles.stack}>
       <h2>My Tech Stack</h2>
       <h3>Technologies I’ve been working with recently</h3>
-      <div className={styles.wrapper}>
-        {iconsArr.map((icon, index) => {
-          return <div key={index} className={`item animate__animated animate__fadeInDown`} style={{ "--i": index * 0.1 }}>{icon}</div>;
-        })}
+       <div className={styles.wrapper} ref={ref}>
+        {inView ? 
+          iconsArr.map((icon, index) => <div key={index}  className={`item animate__animated animate__fadeInDown`} style={{ "--i": index * 0.1 }}>{icon}</div>)
+          :
+          ""
+        }
       </div>
     </div>
   );

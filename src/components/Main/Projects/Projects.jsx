@@ -4,11 +4,7 @@ import flags from "../../../assets/img/flags.png";
 import shortly from "../../../assets/img/shortly.png";
 import kanban from "../../../assets/img/kanban.png";
 import mistfile from "../../../assets/img/mistfile.png";
-import reecard from "../../../assets/img/reecard.png";
-import scan from "../../../assets/img/scan.png";
 import ipTracker from "../../../assets/img/ipTracker.png";
-import irvas from "../../../assets/img/window-store.png";
-import pictures from "../../../assets/img/pictures.art.png";
 import { useInView } from "react-intersection-observer";
 import { Project } from "./Project";
 import { useGetWindowWidth } from "../../customHooks/useGetWindowWidth";
@@ -24,7 +20,7 @@ const projects = [
     img: kanban,
     title: "STRUKD",
     describe:
-      "Web application dedicaded a platform which leverages machine learning, natural language processing, and computer vision to efficiently navigate the web and extract relevant data.",
+      "Web application dedicaded a platform which leverages machine learning.",
     stack: "HTML, NEXT.JS, Tailwind CSS, React.JS",
     link: "https://strukd.com/",
     github: "https://strukd.com/",
@@ -32,9 +28,7 @@ const projects = [
   {
     img: mistfile,
     title: "Clomd",
-    describe: `This is a cloud computing application. I implemented registration, login, communication with backend,
-    rendering components getting JSON data from the API. In this application we used non-password verification, so I created logics which catch from the 
-    search query necessary information and check user type and subscription type, using Redux RTK and React-Router-Dom and useEffect Hook.`,
+    describe: `A cloud computing application.`,
     stack:
       "HTML, TailWind CSS, Animated TailWind CSS, React.JS, STRIPE.JS, JS cookie, React-Hook-Form, -React-Router-Dom, Redux Persist, Redux RTK",
     link: "https://clomd.com/",
@@ -43,7 +37,7 @@ const projects = [
   {
     img: ipTracker,
     title: "IP Tracker",
-    describe: `This project is an IP tracker web application developed as a solution to the IP Address Tracker Challenge from Frontend Mentor. The app allows users to track and visualize IP addresses on an interactive map, providing details about the location, ISP, and other relevant information.`,
+    describe: `An IP tracker web application, allows users to track and visualize IP addresses on a map.`,
     stack:
       "HTML5, CSS3, SCSS, Framer-Motion Library For CSS, JavaScript (ES6+), React.JS, React-Copy-To-Clipboard, React-Redux, React-Router-Dom, Redux-Persist, React-Icons, React-Hook-Form, React-Leaflet, React-Text-Mask",
     link: "https://ip-tracker-ten-alpha.vercel.app/",
@@ -52,7 +46,7 @@ const projects = [
   {
     img: shortly,
     title: "URL Shortener",
-    describe: `This project is a URL shortener web application. The app allows users to shorten long URLs into more manageable, easy-to-share links.`,
+    describe: `A URL shortener web application.`,
     stack:
       "HTML5, CSS3, SCSS, Framer-Motion Library For CSS, JavaScript (ES6+), React.JS, React-Copy-To-Clipboard, React-Redux, React-Router-Dom, Redux-Persist, React-Icons, React-Hook-Form",
     link: "https://urlshortener-kohl.vercel.app/",
@@ -61,9 +55,7 @@ const projects = [
   {
     img: personal,
     title: "Personal Website",
-    describe: `My first website which I wrote in 2021. It was the first time when I used HTML, CSS, Vanilla JS together. 
-    Authorization and registration I implemented using Fetch Requests. Information about user I collected and saved in 
-    local.storage. The logics of search requests I used browser API via search queries. `,
+    describe: `My first website from 2021.`,
     stack: "HTML, CSS, GULP, SCSS, REST API, JS",
     link: "https://ivanzhigalev-birlogich.vercel.app/",
     github: "https://github.com/Birlogich/Cutaway",
@@ -72,7 +64,7 @@ const projects = [
     img: flags,
     title: "Country Flag APP",
     describe:
-      "The application dedicated country flags and can check neighbors of every country. My PET Project to hone my skills in Redux-React. Information about application's state I saved in the store using Redux RTK.  ",
+      "The application to check neighbors of every country.",
     stack: "Styled.Components, React.JS, RTK, HTML",
     link: "https://countries-flags-app-one.vercel.app/",
     github: "https://github.com/Birlogich/countries-flags",
@@ -88,9 +80,7 @@ export const Projects = memo(() => {
 
   const setRefs = useCallback(
     (node) => {
-      // Ref's from useRef needs to have the node assigned to `current`
       ref.current = node;
-      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
       inViewRef(node);
     },
     [inViewRef]

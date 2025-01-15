@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Poppins:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&family=Poppins:wght@400;600;700;800&display=swap");
 
 :root {
-
   /* Typography */
-  --family-dm-sans: 'DM Sans', sans-serif;
-  --family-poppins: 'Poppins', sans-serif;
+  --family-dm-sans: "DM Sans", sans-serif;
+  --family-poppins: "Poppins", sans-serif;
   --fs-general: 18px;
   --fs-title: 58px;
   --fs-title-bg: 70px;
@@ -25,32 +24,32 @@
     @apply text-section-title-color font-bold;
     font-size: clamp(35px, 3.3vw, 48px);
     margin-bottom: clamp(25px, 1.5vw, 40px);
- }
+  }
 
- h3 {
+  h3 {
     @apply text-ordinary text-section-subtitle;
     font-size: clamp(25px, 2.2vw, 32px);
     margin-bottom: clamp(25px, 5vw, 50px);
- }
+  }
 }
 
-body[data-theme='light'] {
-  --ordinary-color:#666666;
-  --section-title: #42446E;
+body[data-theme="light"] {
+  --ordinary-color: #666666;
+  --section-title: #42446e;
   --section-subtitle: #666666;
   --card-title-text: #000000;
   --link: #000000;
-  --bg-color: #FFFFFF;
-  --bg-card-color: #FFFFFF;
+  --bg-color: #ffffff;
+  --bg-card-color: #ffffff;
 }
-body[data-theme='dark'] {
-  --ordinary-color:#666666;
-  --section-title: #CCCCCC;
-  --section-subtitle: #A7A7A7;
-  --card-title-text: #CCCCCC;
-  --link: #FFFFFF;
-  --bg-color: #000000;
-  --bg-card-color: #363535;
+body[data-theme="dark"] {
+  --ordinary-color: #d1d1d1;
+  --section-title: #e2e6f1;
+  --section-subtitle: #a0a5b9;
+  --card-title-text: #f0f1f6;
+  --link: #4a90e2;
+  --bg-color: #181818;
+  --bg-card-color: #242424;
 }
 
 #root {
@@ -63,12 +62,11 @@ body {
   margin: 0 auto;
   color: var(--ordinary-text);
   font-family: var(--family-dm-sans);
-  font-size: var( --fs-general);
+  font-size: var(--fs-general);
   font-weight: var(--fw-normal);
   background-color: var(--bg-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

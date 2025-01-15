@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../../../features/theme/use-theme";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import styles from './project.module.scss'
 
 const copyIcon = (
   <svg
@@ -54,27 +55,22 @@ const gitImage = (
 
 export const Project = ({ project, inView }) => {
   const [theme] = useTheme();
-  const dropShadowStyle = { boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" };
   const [fulldesc, setFullDesc] = useState("");
-
-  const animationStyle =
-    "flex flex-col rounded-[15px] max-w-[356px] w-full mx-[22px] mb-[60px] bg-[#FDFDFD] bg-bg-card-color min-w-[275px]";
 
   return (
     <>
       <div
-        style={dropShadowStyle}
         className={
           !inView
-            ? `${animationStyle} duration-300 ease-in translate-x-7 opacity-0`
-            : `${animationStyle} duration-300 opacity-1 translate-x-0`
+            ? `${styles.wrapper} ease-in translate-x-7 opacity-0`
+            : `${styles.wrapper} opacity-1 translate-x-0`
         }
       >
-        <div className="w-full mb-[25px] h-[260px]">
+        <div className={`${styles.imageWrapper} w-full mb-[25px] h-[260px]`}>
           <img
             src={project.img}
             alt={project.title}
-            className="object-cover h-full w-full"
+            className="object-cover h-full w-full rounded-[15px] cursor-pointer"
           />
         </div>
         <div className="p-[20px] flex flex-col flex-auto">
@@ -82,18 +78,18 @@ export const Project = ({ project, inView }) => {
             <p className="text-card-title-color text-card-title mb-[17px] font-bold">
               {project.title}
             </p>
-            <button
+            <p
               className="text-general text-section-subtitle-color mb-[12px] flex-auto"
               onClick={() => setFullDesc(true)}
             >
               {project.describe.length > 100
                 ? project.describe.slice(0, 100) + "..."
                 : project.describe}
-            </button>
-            <p className="text-general text-section-subtitle-color mb-[24px]">
+            </p>
+ {/*            <p className="text-general text-section-subtitle-color mb-[24px]">
               <span className="text-card-title-color">Tech stack: </span>
               {project.stack}
-            </p>
+            </p> */}
           </div>
           <div className="flex w-full justify-between sm:flex-col">
             <Link
@@ -123,7 +119,7 @@ export const Project = ({ project, inView }) => {
           </div>
         </div>
       </div>
-      {fulldesc && (
+{/*       {fulldesc && (
         <div className="w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10">
           <div
             className={`${
@@ -137,7 +133,7 @@ export const Project = ({ project, inView }) => {
             <p>{project.describe}</p>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
