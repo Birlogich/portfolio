@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../../../features/theme/use-theme";
 import { useState } from "react";
 /* import { IoMdClose } from "react-icons/io"; */
-import styles from './project.module.scss'
+import styles from './project.module.scss';
 
 const copyIcon = (
   <svg
