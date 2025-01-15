@@ -241,7 +241,7 @@ const iconsArr = [
 export const TechStack = () => {
 
   const { ref, inView } = useInView({
-    triggerOnce: false, 
+    triggerOnce: true, 
     threshold: 0.1,     
   });
 
