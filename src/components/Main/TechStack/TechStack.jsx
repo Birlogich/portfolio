@@ -245,7 +245,6 @@ export const TechStack = () => {
     threshold: 0.1,     
   });
 
-
   return (
     <div className={styles.stack}>
       <h2>My Tech Stack</h2>
