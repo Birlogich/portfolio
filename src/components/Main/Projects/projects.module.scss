@@ -2,7 +2,3 @@
    @apply flex flex-col text-center items-center;
    margin-bottom: clamp(50px, 14vw, 100px);
 }
-
-.imgWrapper {
-   @apply w-full mb-[25px] h-[260px];
-}

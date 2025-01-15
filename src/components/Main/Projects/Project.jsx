@@ -66,7 +66,7 @@ export const Project = ({ project, inView }) => {
             : `${styles.wrapper} opacity-1 translate-x-0`
         }
       >
-        <div className={`${styles.imageWrapper} w-full mb-[25px] h-[260px]`}>
+        <div className={styles.imageWrapper}>
           <img
             src={project.img}
             alt={project.title}
