@@ -61,7 +61,7 @@ export const Header = () => {
     },
   }));
 
-  const chooseColor = theme === "dark" ? "bg-white" : "bg-[antiquewhite]";
+  const chooseColor = theme === "dark" ? "bg-white" : "bg-[--section-subtitle]";
   const closeMenu = () => setShowMenu(false);
   const activeClass = ({ isActive }) =>
     !isActive ? styles.link : `${styles.link} ${styles.link_active}`;

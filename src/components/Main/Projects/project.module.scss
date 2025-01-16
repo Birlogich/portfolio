@@ -9,12 +9,57 @@
    margin-bottom: 60px;
    background-color: var(--bg-card-color);
    min-width: 275px;
-   padding: 2px;
+   padding: 10px;
    transition-duration: 300ms;
+   border: 2px solid black;
 }
 
 .imageWrapper {
    width: 100%;
    margin-bottom: 25px;
    height: 260px;
+   overflow: hidden;
+   border-radius: 15px;
+   position: relative;
+
+   & img {
+      @apply object-cover h-full w-full rounded-[15px] cursor-pointer duration-300;
+
+      &:hover {
+         transform: scale(1.1);
+         filter: blur(5px);
+      }
+   }
+
+   & p {
+      @apply text-general mb-[12px] flex-auto absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      z-index: 2;
+   }
+}
+
+.imageWrapper::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: white;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   pointer-events: none;
+}
+
+.imageWrapper:hover::after {
+   opacity: 1;
+}
+
+.imageWrapper:hover p {
+   opacity: 1;
 }

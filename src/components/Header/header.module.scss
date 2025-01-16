@@ -5,7 +5,7 @@
 }
 
 .navigation {
-   display:  flex; 
+   display: flex;
    @apply text-ordinary;
    column-gap: clamp(10px, 10vw, 100px);
 }
@@ -18,7 +18,7 @@
       @apply text-section-title-color;
    }
    &::after {
-      content: '';
+      content: "";
       display: inline-block;
       width: 0;
       height: 1px;
@@ -26,9 +26,9 @@
       bottom: 0;
       left: 0;
       background: #54b3d6 no-repeat;
-      transition: all .3s;
+      transition: all 0.3s;
    }
-   &:hover::after  {
+   &:hover::after {
       width: 100%;
    }
 }
@@ -46,11 +46,11 @@
    backdrop-filter: blur(6px);
 
    div {
-      @apply flex flex-col justify-between text-ordinary items-center rounded-lg relative;
+      @apply flex flex-col justify-between items-center rounded-lg relative;
       width: 100%;
       max-width: 609px;
       height: 50%;
-      padding-inline: 60px;
+      padding: 3rem;
       svg {
          position: absolute;
          top: 10px;

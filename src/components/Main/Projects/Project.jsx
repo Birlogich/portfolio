@@ -1,8 +1,7 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../features/theme/use-theme";
-import { useState } from "react";
-/* import { IoMdClose } from "react-icons/io"; */
-import styles from './project.module.scss';
+import styles from "./project.module.scss";
 
 const copyIcon = (
   <svg
@@ -53,43 +52,40 @@ const gitImage = (
   </svg>
 );
 
-export const Project = ({ project, inView }) => {
+export const Project = ({ project }) => {
   const [theme] = useTheme();
   const [fulldesc, setFullDesc] = useState("");
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Обработчики событий для отслеживания наведения
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
+  console.log(isHovered);
+
   return (
     <>
-      <div
-        className={
-          !inView
-            ? `${styles.wrapper} ease-in translate-x-7 opacity-0`
-            : `${styles.wrapper} opacity-1 translate-x-0`
-        }
-      >
-        <div className={styles.imageWrapper}>
-          <img
-            src={project.img}
-            alt={project.title}
-            className="object-cover h-full w-full rounded-[15px] cursor-pointer"
-          />
+      <div className={styles.wrapper}>
+        <div
+          className={styles.imageWrapper}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={project.img} alt={project.title} />
+          {isHovered && (
+            <p onClick={() => setFullDesc(true)}>{project.describe}</p>
+          )}
         </div>
         <div className="p-[20px] flex flex-col flex-auto">
           <div className="flex flex-col flex-auto">
             <p className="text-card-title-color text-card-title mb-[17px] font-bold">
               {project.title}
             </p>
-            <p
-              className="text-general text-section-subtitle-color mb-[12px] flex-auto"
-              onClick={() => setFullDesc(true)}
-            >
-              {project.describe.length > 100
-                ? project.describe.slice(0, 100) + "..."
-                : project.describe}
-            </p>
- {/*            <p className="text-general text-section-subtitle-color mb-[24px]">
+            <p className="text-general text-section-subtitle-color mb-[24px]">
               <span className="text-card-title-color">Tech stack: </span>
               {project.stack}
-            </p> */}
+            </p>
           </div>
           <div className="flex w-full justify-between sm:flex-col">
             <Link
@@ -119,21 +115,6 @@ export const Project = ({ project, inView }) => {
           </div>
         </div>
       </div>
-{/*       {fulldesc && (
-        <div className="w-full h-full overflow-hidden flex items-center justify-center fixed top-0 left-0 backdrop-blur-[6px] z-10">
-          <div
-            className={`${
-              theme === "dark" ? "bg-white" : "bg-[antiquewhite]"
-            } flex flex-col w-full max-w-[356px] justify-between text-ordinary items-center p-[30px] rounded-lg relative`}
-          >
-            <IoMdClose
-              className="absolute top-0 right-0 w-[35px]"
-              onClick={() => setFullDesc(false)}
-            />
-            <p>{project.describe}</p>
-          </div>
-        </div>
-      )} */}
     </>
   );
 };
