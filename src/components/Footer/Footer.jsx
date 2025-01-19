@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./footer.module.scss";
 
 const githubIcon = (
   <svg
@@ -42,16 +43,20 @@ const linkedinIcon = (
 
 export const Footer = () => {
   return (
-    <div className="flex w-full justify-center pb-[30px] sm:flex-col sm:items-center sm:text-center">
-      <div className="flex sm:mb-[10px] sm:flex-col">
-        <Link to={'tel:+1 484 761 7991'} className="mr-[33px] sm:mr-0"><span className="text-ordinary">+1 484 761 7991</span></Link>
-        <Link to={'mailto:vangogimomo@gmail.com'} className="mr-[50px] sm:mr-0">
-        <span className="text-ordinary">vangogimomo@gmail.com</span>
+    <div className={styles.wrapper}>
+      <div className={styles.top}>
+        <Link to={"tel:+1 484 761 7991"} className={styles.link}>
+          <span className="text-ordinary">+1 484 761 7991</span>
+        </Link>
+        <Link to={"mailto:vangogimomo@gmail.com"} className={styles.link}>
+          <span className="text-ordinary">vangogimomo@gmail.com</span>
         </Link>
       </div>
-      <div className="flex w-full max-w-[90px] justify-between">
+      <div className={styles.bottom}>
         <Link to="https://github.com/Birlogich">{githubIcon}</Link>
-        <Link target="_blank" to="https://www.linkedin.com/in/javaivan/">{linkedinIcon}</Link>
+        <Link target="_blank" to="https://www.linkedin.com/in/javaivan/">
+          {linkedinIcon}
+        </Link>
       </div>
     </div>
   );

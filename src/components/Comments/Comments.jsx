@@ -2,6 +2,7 @@ import { addComment } from "../../features/comments/comments-slice";
 import { useDispatch, useSelector } from "react-redux";
 import { Comment } from "./Comment";
 import { useTheme } from "../../features/theme/use-theme";
+import styles from "./comments.module.scss";
 
 export const Comments = () => {
   const dispatch = useDispatch();
@@ -29,18 +30,16 @@ export const Comments = () => {
           type="text"
           placeholder="name"
           name="name"
-          className="border-text-link-color border-[1px] border-solid p-[10px] rounded-lg mb-[20px] text-general text-section-subtitle-color"
+          className={styles.input}
         ></input>
         <input
           type="text"
           placeholder="comment"
           name="mes"
-          className="border-text-link-color border-[1px] border-solid p-[10px] rounded-lg mb-[20px] text-general text-section-subtitle-color"
+          className={styles.input}
         ></input>
         <button
-          className={`
-        ${theme === "dark" ? "bg-white" : ""}
-        flex flex-col border-black border-[1px] border-solid p-[10px] rounded-lg max-w-[100px] items-center justify-center`}
+          className={`${styles.btn} ${theme === "dark" ? "bg-white" : ""}`}
         >
           Submit
         </button>

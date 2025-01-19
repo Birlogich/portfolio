@@ -58,7 +58,6 @@ export const Project = ({ project }) => {
 
   const [isHovered, setIsHovered] = useState(false);
 
-  // Обработчики событий для отслеживания наведения
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 

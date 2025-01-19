@@ -1,0 +1,15 @@
+.wrapper {
+   @apply flex w-full justify-center pb-[30px] sm:flex-col sm:items-center sm:text-center;
+}
+
+.top {
+   @apply flex sm:mb-[10px] sm:flex-col;
+}
+
+.bottom {
+   @apply flex w-full max-w-[90px] justify-between;
+}
+
+.link {
+   @apply mr-[33px] sm:mr-0;
+}

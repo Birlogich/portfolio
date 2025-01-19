@@ -101,7 +101,9 @@ export const Header = () => {
             onClick={() => setShowMenu(true)}
           />
           {showMenu && (
-            <nav className={styles.signWrapper}>
+            <nav
+              className={`${styles.signWrapper} animate__animated animate__fadeInLeft`}
+            >
               <div className={chooseColor}>
                 <IoMdClose onClick={closeMenu} />
                 <NavLink to="/" onClick={closeMenu}>
