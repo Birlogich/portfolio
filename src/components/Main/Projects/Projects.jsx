@@ -1,9 +1,10 @@
-import React, { memo } from "react";
+import React from "react";
 import personal from "../../../assets/img/personal.png";
 import flags from "../../../assets/img/flags.png";
 import shortly from "../../../assets/img/shortly.png";
 import kanban from "../../../assets/img/kanban.png";
 import mistfile from "../../../assets/img/mistfile.png";
+import starwars from "../../../assets/img/starwars.png";
 import ipTracker from "../../../assets/img/ipTracker.png";
 import { Project } from "./Project";
 import { useGetWindowWidth } from "../../customHooks/useGetWindowWidth";
@@ -14,6 +15,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const projects = [
+  {
+    img: starwars,
+    title: "STAR WARS APP",
+    describe: "Fan site about Star Wars with complete info.",
+    stack: "HTML, NEXT.JS, Tailwind CSS, React.JS, REST API",
+    link: "https://starwars-cyan.vercel.app/",
+    github: "https://github.com/Birlogich/starwars",
+  },
   {
     img: kanban,
     title: "STRUKD",
