@@ -1,5 +1,6 @@
 .stack {
-   @apply flex flex-col text-center mb-[200px] sm:mb-[50px] w-full;
+   @apply flex flex-col text-center w-full;
+   margin-bottom: clamp(50px, 15vw, 100px);
 }
 
 .wrapper {
@@ -7,6 +8,16 @@
 }
 
 .wrapper > div {
-   @apply justify-center flex items-center;
+   @apply justify-center flex items-center flex-col;
    animation-delay: calc(1s * var(--i)) !important;
+
+   & > div {
+      width: 100px;
+      height: 100px;
+
+      & > svg {
+         width: 100%;
+         height: 100%;
+      }
+   }
 }

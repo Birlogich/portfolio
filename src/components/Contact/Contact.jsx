@@ -1,5 +1,3 @@
-import React from "react";
-
 const gradientStyle = {
   background: "linear-gradient(to right, #121FCF 0%, #CF1512 100%)",
   WebkitBackgroundClip: "text",
@@ -12,12 +10,12 @@ export const Contact = () => {
       <p className="text-title-bg text-section-title-color font-bold sm:text-[25px]">
         For any questions:
       </p>
-      <p
+      <a href="mailto:ivanzhigalev@outlook.com"  
         className="text-title-bg text-section-title-color font-bold sm:text-[20px]"
         style={gradientStyle}
       >
-        vangogimomo@gmail.com
-      </p>
+        ivanzhigalev@outlook.com
+      </a>
     </div>
   );
 };

@@ -5,10 +5,12 @@ export const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <p>
-        Hi, <br />
-        I'm front end developer
+        Hi, I'm an IT Support Specialist 
         <br />
-        who writes clean, elegant and efficient code
+        & Backend Developer
+        <br />
+        focused on stability, performance
+        and elegant problem-solving.
       </p>
       <img src={ivanphoto} alt="myphoto" />
     </div>

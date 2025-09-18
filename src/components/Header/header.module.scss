@@ -1,7 +1,7 @@
 .header {
    @apply flex w-full justify-between items-center;
    margin-top: 5vw;
-   margin-bottom: 10vw;
+   margin-bottom: clamp(50px, 15vw, 100px);
 }
 
 .navigation {
