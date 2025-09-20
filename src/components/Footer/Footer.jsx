@@ -48,8 +48,8 @@ export const Footer = () => {
         <Link to={"tel:+1 484 761 7991"} className={styles.link}>
           <span className="text-ordinary">+1 484 761 7991</span>
         </Link>
-        <Link to={"mailto:vangogimomo@gmail.com"} className={styles.link}>
-          <span className="text-ordinary">vangogimomo@gmail.com</span>
+        <Link to={"mailto:ivanzhigalev@outlook.com"} className={styles.link}>
+          <span className="text-ordinary">ivanzhigalev@outlook.com</span>
         </Link>
       </div>
       <div className={styles.bottom}>
