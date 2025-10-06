@@ -48,10 +48,10 @@ const jobs = [
 
 const education = [
   {
-    title: "B.S. in Computer Science",
+    title: "B.S. in Computer Science (Five-Year Program Online)",
     company: "Samara State University",
-    location: "Remote, Russia",
-    time: "09/2025 – 06/2028",
+    location: "Tolyatti, Russia",
+    time: "12/2023 – 12/2028",
     type: "University",
   },
   {
@@ -94,7 +94,7 @@ const education = [
     company: "Samara State University of Economics",
     location: "Samara, Russia",
     time: "02/2016",
-            type: "University",
+    type: "University",
   },
 ];
 
