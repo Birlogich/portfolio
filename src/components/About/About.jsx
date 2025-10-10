@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const jobs = [
   {
-    title: "Chromebook Repair Technician",
+    title: "Computer Techinican",
     type: "Full-time",
     company: "Inspiroz",
     location: "PA, US",
