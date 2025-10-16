@@ -37,8 +37,15 @@ const jobs = [
     location: "Russia",
     time: "04/22 - 10/2022",
   },
+    {
+    title: "English Teacher",
+    type: "Part-time",
+    company: "Windsor English Private School",
+    location: "Russia",
+    time: "09/21 - 05/22",
+  },
   {
-    title: "Detective",
+    title: "Police Detective",
     type: "Full-time",
     company: "Police",
     location: "Russia",
