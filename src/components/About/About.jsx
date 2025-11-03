@@ -40,7 +40,7 @@ const jobs = [
     {
     title: "English Teacher",
     type: "Part-time",
-    company: "Windsor English Private School",
+    company: "Windsor English Language Private School",
     location: "Russia",
     time: "09/21 - 05/22",
   },
@@ -55,7 +55,7 @@ const jobs = [
 
 const education = [
   {
-    title: "B.S. in Computer Science (Five-Year Program Online)",
+    title: "B.S. in Software Engineering (Five-Year Program Online)",
     company: "Samara State University",
     location: "Tolyatti, Russia",
     time: "12/2023 – 12/2028",
