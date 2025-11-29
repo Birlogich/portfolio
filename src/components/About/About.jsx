@@ -18,38 +18,24 @@ const jobs = [
   },
   {
     title: "Frontend Developer",
-    type: "Freelance",
-    company: "UpWork",
-    location: "Remote, US",
-    time: "01/24 - 08/24",
-  },
-  {
-    title: "Frontend Developer",
-    type: "Contract",
+    type: "Full-time",
     company: "REECARD LLC",
     location: "CA, US",
-    time: "08/23 - 12/23",
+    time: "04/23 - 08/24",
   },
   {
     title: "Frontend Developer",
     type: "Full-time",
     company: "Guldia PRO",
     location: "Russia",
-    time: "04/22 - 10/2022",
+    time: "05/22 - 10/2022",
   },
     {
     title: "English Teacher",
-    type: "Part-time",
+    type: "Full-time",
     company: "Windsor English Language Private School",
     location: "Russia",
-    time: "09/21 - 05/22",
-  },
-  {
-    title: "Police Detective",
-    type: "Full-time",
-    company: "Police",
-    location: "Russia",
-    time: "03/12 - 09/21",
+    time: "09/17 - 05/22",
   },
 ];
 
@@ -108,20 +94,9 @@ const education = [
 export const About = () => {
   return (
     <div className="flex flex-col w-full flex-auto">
-      <Link 
-        to="/files/IvanZhigalevResume.docx"
-        target="_blank"
-        download
-        className="max-w-[285px] mb-[40px] text-[20px] text-link-color sm:mb-[20px] underline-offset-1 border-b-[1px] border-solid border-black"
-      >
-        My Resume (click to download)
-      </Link>
-
       <h2>About Me</h2>
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
-        Dedicated IT Support Specialist with strong troubleshooting skills and passion 
-        for solving technical challenges. Experienced in system administration, 
-        hardware/software support, and backend development. Currently pursuing a 
+        I'm an IT enthusiast. Currently pursuing a 
         Computer Science degree and CompTIA certifications to strengthen technical 
         expertise and career growth.
       </p>
