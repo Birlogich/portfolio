@@ -82,13 +82,6 @@ const education = [
     time: "09/2021 – 07/2022",
     type: "Course",
   },
-  {
-    title: "Masters in Law (Six-Year Program)",
-    company: "Samara State University of Economics",
-    location: "Samara, Russia",
-    time: "02/2016",
-    type: "University",
-  },
 ];
 
 export const About = () => {
