@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../features/theme/use-theme";
 import styles from "./project.module.scss";
@@ -61,7 +61,7 @@ export const Project = ({ project }) => {
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 
-  console.log(isHovered);
+  console.log(fulldesc);
 
   return (
     <>

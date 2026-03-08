@@ -1,5 +1,3 @@
-import React from "react";
-
 const companyImg = (
   <svg
     width="16"
@@ -15,7 +13,7 @@ const companyImg = (
   </svg>
 );
 
-const locationImg = (
+/* const locationImg = (
   <svg
     width="16"
     height="12"
@@ -32,7 +30,7 @@ const locationImg = (
       fill="#A7A7A7"
     />
   </svg>
-);
+); */
 
 const dateImg = (
   <svg
