@@ -5,12 +5,8 @@ export const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <p>
-        Hi, I'm an IT Support Specialist 
-        <br />
-        & Backend Developer
-        <br />
-        focused on stability, performance
-        and elegant problem-solving.
+        IT Support Engineer with a focus on networking and system
+        administration.
       </p>
       <img src={ivanphoto} alt="myphoto" />
     </div>

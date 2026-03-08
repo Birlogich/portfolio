@@ -84,10 +84,10 @@ export const JobSection = ({ job }) => {
             <div className="w-[16px] h-[12px] sm:hidden">{companyImg}</div>
             <span className="ml-[5px] text-link-color">{job.company}</span>
           </span>
-          <span className="text-section-subtitle-color flex items-center">
+          {/*          <span className="text-section-subtitle-color flex items-center">
             <div className="w-[16px] h-[12px] sm:hidden">{locationImg}</div>
             <span className="ml-[5px] sm:text-[15px]">{job.location}</span>
-          </span>
+          </span> */}
         </div>
         <div className="flex items-center">
           <div className="w-[16px] h-[12px] sm:hidden">{dateImg}</div>

@@ -30,7 +30,7 @@ const jobs = [
     location: "Russia",
     time: "05/22 - 10/2022",
   },
-    {
+  {
     title: "English Teacher",
     type: "Full-time",
     company: "Windsor English Language Private School",
@@ -41,9 +41,9 @@ const jobs = [
 
 const education = [
   {
-    title: "B.S. in Software Engineering (Five-Year Program Online)",
+    title: "B.S. in Software Engineering",
     company: "Samara State University",
-    location: "Tolyatti, Russia",
+    location: "Remote",
     time: "12/2023 – 12/2028",
     type: "University",
   },
@@ -54,7 +54,7 @@ const education = [
     time: "06/2025",
     type: "Course",
   },
-    {
+  {
     title: "CompTIA A+ Core 1",
     company: "CompTIA",
     location: "Remote, US",
@@ -89,9 +89,18 @@ export const About = () => {
     <div className="flex flex-col w-full flex-auto">
       <h2>About Me</h2>
       <p className="max-w-[700px] mb-[40px] text-[20px] text-link-color sm:mb-[20px]">
-        I'm an IT enthusiast. Currently pursuing a 
-        Computer Science degree and CompTIA certifications to strengthen technical 
-        expertise and career growth.
+        I am an IT Support Engineer with hands-on experience supporting Windows
+        and ChromeOS environments in enterprise settings. I specialize in
+        troubleshooting hardware, operating systems, and network connectivity
+        issues. My experience includes managing devices in Google Workspace
+        environments, resolving technical issues through ticketing systems such
+        as ServiceNow, and supporting end users in production environments. In
+        addition to my professional experience, I maintain a personal home lab
+        where I practice system administration, networking, and infrastructure
+        concepts using Windows Server, Linux, and virtualization technologies. I
+        am currently pursuing a Bachelor's degree in Software Engineering while
+        preparing for the CompTIA Network+ certification to further develop my
+        networking and infrastructure expertise.
       </p>
 
       {/* Education Section */}
