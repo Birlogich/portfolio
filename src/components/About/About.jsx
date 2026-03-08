@@ -44,7 +44,7 @@ const education = [
     title: "B.S. in Software Engineering",
     company: "Samara State University",
     location: "Remote",
-    time: "12/2023 – 12/2028",
+    time: "2028",
     type: "University",
   },
   {
